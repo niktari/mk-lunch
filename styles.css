@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Platform";
+    src:
+      url("platform.otf") format("opentype"),
+  }
+
+body {
+    font-family: "Platform", sans-serif;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+h1 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Platform", sans-serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+#regenerate {
+    background-color: black;
+}
+
+#regenerate:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+#add-restaurant {
+    border: 2px solid black;
+}
+
+#add-restaurant:hover {
+    background-color: black;
+}
+
+#add-restaurant:hover a {
+    color: white;
+}
